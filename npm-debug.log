@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'express',
+1 verbose cli   'pug' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /Volumes/Projects/Easter-projects/ongoing/mongoldb-stack/package.json
+5 verbose readDependencies loading dependencies from /Volumes/Projects/Easter-projects/ongoing/mongoldb-stack/package.json
+6 silly cache add args [ 'express', null ]
+7 verbose cache add spec express
+8 silly cache add args [ 'pug', null ]
+9 verbose cache add spec pug
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'express',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'express',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: 'latest',
+10 silly cache add   type: 'tag' }
+11 silly addNamed express@latest
+12 verbose addNamed "latest" is being treated as a dist-tag for express
+13 info addNameTag [ 'express', 'latest' ]
+14 silly mapToRegistry name express
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'express',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   name: 'express',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/express
+19 verbose addNameTag registry:https://registry.npmjs.org/express not in flight; fetching
+20 silly cache add parsed spec Result {
+20 silly cache add   raw: 'pug',
+20 silly cache add   scope: null,
+20 silly cache add   name: 'pug',
+20 silly cache add   rawSpec: '',
+20 silly cache add   spec: 'latest',
+20 silly cache add   type: 'tag' }
+21 silly addNamed pug@latest
+22 verbose addNamed "latest" is being treated as a dist-tag for pug
+23 info addNameTag [ 'pug', 'latest' ]
+24 silly mapToRegistry name pug
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: 'pug',
+27 silly mapToRegistry   scope: null,
+27 silly mapToRegistry   name: 'pug',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/pug
+29 verbose addNameTag registry:https://registry.npmjs.org/pug not in flight; fetching
+30 verbose request uri https://registry.npmjs.org/pug
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 2:24:12 PM
+33 verbose request id 43f05ff30e73b005
+34 http request GET https://registry.npmjs.org/pug
+35 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+36 verbose request uri https://registry.npmjs.org/express
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 2:24:12 PM
+39 verbose etag "4YFR9M41ZZTHAP67KW6RJQE8K"
+40 http request GET https://registry.npmjs.org/express
+41 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+42 info attempt registry request try #2 at 2:24:22 PM
+43 http request GET https://registry.npmjs.org/pug
+44 info attempt registry request try #2 at 2:24:22 PM
+45 verbose etag "4YFR9M41ZZTHAP67KW6RJQE8K"
+46 http request GET https://registry.npmjs.org/express
+47 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+48 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+49 info attempt registry request try #3 at 2:25:24 PM
+50 verbose etag "4YFR9M41ZZTHAP67KW6RJQE8K"
+51 http request GET https://registry.npmjs.org/express
+52 info attempt registry request try #3 at 2:25:24 PM
+53 http request GET https://registry.npmjs.org/pug
+54 silly get cb [ 304, undefined ]
+55 verbose etag https://registry.npmjs.org/express from cache
+56 verbose get saving express to /Users/tune/.npm/registry.npmjs.org/express/.cache.json
+57 verbose correctMkdir /Users/tune/.npm correctMkdir not in flight; initializing
+58 silly addNameTag next cb for express with tag latest
+59 silly addNamed express@4.13.4
+60 verbose addNamed "4.13.4" is a plain semver version for express
+61 silly cache afterAdd express@4.13.4
+62 verbose afterAdd /Users/tune/.npm/express/4.13.4/package/package.json not in flight; writing
+63 verbose correctMkdir /Users/tune/.npm correctMkdir not in flight; initializing
+64 verbose afterAdd /Users/tune/.npm/express/4.13.4/package/package.json written
+65 verbose stack Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+65 verbose stack     at errnoException (dns.js:27:10)
+65 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:78:26)
+66 verbose cwd /Volumes/Projects/Easter-projects/ongoing/mongoldb-stack
+67 error Darwin 15.5.0
+68 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "express" "pug"
+69 error node v4.4.5
+70 error npm  v2.15.5
+71 error code ENOTFOUND
+72 error errno ENOTFOUND
+73 error syscall getaddrinfo
+74 error network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+74 error network This is most likely not a problem with npm itself
+74 error network and is related to network connectivity.
+74 error network In most cases you are behind a proxy or have bad network settings.
+74 error network
+74 error network If you are behind a proxy, please make sure that the
+74 error network 'proxy' config is set properly.  See: 'npm help config'
+75 verbose exit [ 1, true ]
